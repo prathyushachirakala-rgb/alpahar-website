@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Commande à emporter - Alpahar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Alpahar" class="logo">
+        <nav>
+            <a href="index.html">English</a> | <a href="index_fr.html">Français</a>
+            <a href="menu_fr.html">Menu</a>
+            <a href="pickup_fr.html">Commande à emporter</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Passer une commande à emporter</h1>
+        <form action="https://www.lightspeedhq.com/pos/restaurant/order-anywhere/" method="get" target="_blank">
+            <label for="item">Sélectionnez un plat :</label>
+            <select id="item" name="item">
+                <option value="idli">Idli</option>
+                <option value="dosa">Dosa</option>
+                <option value="poori">Poori</option>
+                <option value="vada">Vada</option>
+                <option value="sambar">Sambar</option>
+                <option value="bonda">Mysore Bonda</option>
+            </select><br><br>
+            <label for="date">Date de retrait :</label>
+            <input type="date" id="date" name="date"><br><br>
+            <label for="time">Heure de retrait :</label>
+            <input type="time" id="time" name="time"><br><br>
+            <button type="submit">Commander</button>
+        </form>
+    </main>
+</body>
+</html>
